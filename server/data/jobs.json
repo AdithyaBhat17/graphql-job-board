@@ -16,5 +16,40 @@
     "companyId": "SJV0-wdOM",
     "title": "Full-Stack Developer",
     "description": "We are looking for a Full-Stack Developer familiar with Node.js, Express, and React."
+  },
+  {
+    "id": "B1sDfjtgu",
+    "companyId": "SJV0-wdOM",
+    "title": "UX Designer",
+    "description": "We're looking to hire a UX Engineer"
+  },
+  {
+    "id": "Bkgawitxu",
+    "title": "Test",
+    "description": "test"
+  },
+  {
+    "id": "HJN8uitgd",
+    "companyId": "SJV0-wdOM",
+    "title": "DevOps Engineer ",
+    "description": "We're looking for someone to restart our servers when they fall over."
+  },
+  {
+    "id": "SkzGBJie_",
+    "title": "QA Engineer",
+    "description": "We're looking for a QA specialist to help our product meet user expectations.",
+    "companyId": "SJV0-wdOM"
+  },
+  {
+    "id": "HJUPAkixd",
+    "title": "UX Writer",
+    "description": "We're looking for a talented copywriter to help improve our product's user experience.",
+    "companyId": "SJV0-wdOM"
+  },
+  {
+    "id": "Hy7bklogO",
+    "title": "UI Designer",
+    "description": "We're looking for a talented UI Designer to work at Goobook",
+    "companyId": "SJV0-wdOM"
   }
 ]

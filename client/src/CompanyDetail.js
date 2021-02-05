@@ -1,20 +1,24 @@
-import React, { Component } from 'react';
-import { companies } from './fake-data';
+import React from "react";
+import { JobList } from "./JobList";
+import { loadCompany } from "./requests";
 
-export class CompanyDetail extends Component {
-  constructor(props) {
-    super(props);
-    const {companyId} = this.props.match.params;
-    this.state = {company: companies.find((company) => company.id === companyId)};
-  }
+export function CompanyDetail({ match }) {
+  const [company, setCompany] = React.useState();
 
-  render() {
-    const {company} = this.state;
-    return (
-      <div>
-        <h1 className="title">{company.name}</h1>
-        <div className="box">{company.description}</div>
-      </div>
-    );
-  }
+  const { companyId } = match.params;
+
+  React.useEffect(() => {
+    loadCompany(companyId).then((company) => setCompany(company));
+  }, [companyId]);
+
+  if (!company) return null;
+
+  return (
+    <div>
+      <h1 className="title">{company.name}</h1>
+      <div className="box">{company.description}</div>
+      <h5>Jobs at {company.name}</h5>
+      <JobList jobs={company.jobs} />
+    </div>
+  );
 }
